@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 require 'pry'
+=======
+require "pry"
+>>>>>>> 4e7e4d3ce2f98614ca768cf1cae7a86a8874c8ba
 
 def welcome
   puts "Welcome to the Blackjack Table"
@@ -37,6 +41,7 @@ end
 
 def hit?(card_total)
   prompt_user
+<<<<<<< HEAD
   x  = get_user_input
  
   if x == "s"
@@ -46,6 +51,21 @@ def hit?(card_total)
      card_total += deal_card
     
   else invalid_command
+=======
+ x  = get_user_input
+ 
+ 
+  if x == "s"
+    return card_total
+    
+  if x == "h"
+     card_total += deal_card
+   end
+  binding.pry
+  
+    else invalid_command
+      hit?(card_total)
+>>>>>>> 4e7e4d3ce2f98614ca768cf1cae7a86a8874c8ba
   end
 end
 
